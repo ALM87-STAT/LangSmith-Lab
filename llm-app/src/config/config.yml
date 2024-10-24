@@ -1,0 +1,12 @@
+# LLM App Project Configuration
+
+# Model Configuration
+models:
+  application:
+    provider: "vertex_ai"
+    parameters:
+      model: "gemini-1.5-pro-002"
+      temperature: 1
+      max_tokens: 2048
+      top_p: 1.0
+
