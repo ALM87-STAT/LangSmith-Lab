@@ -2,6 +2,7 @@ from pathlib import Path
 from typing import Dict, Any
 import yaml
 from pydantic import BaseModel, Field
+from dotenv import load_dotenv
 import os
 
 
@@ -23,6 +24,7 @@ class ConfigLoader:
     def __init__(self, config_path: str | Path = "src\config\config.yml"):
         self.config_path = Path(config_path)
         self.config = self._load_config()
+        load_dotenv()
 
     def _load_config(self) -> Config:
         if not self.config_path.exists():

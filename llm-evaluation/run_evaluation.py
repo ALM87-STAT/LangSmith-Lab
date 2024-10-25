@@ -2,12 +2,10 @@ from src.evaluation.evaluators import Evaluators
 from src.models.chains import CreateChain
 from langsmith.evaluation import evaluate
 from src.config.config_loader import ConfigLoader
-from dotenv import load_dotenv
 
 
 def main():
     # Cargar configuración
-    load_dotenv()
     config = ConfigLoader().get_config
 
     # Inicializar componentes

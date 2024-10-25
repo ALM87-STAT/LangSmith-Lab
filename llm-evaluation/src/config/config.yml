@@ -3,7 +3,7 @@
 # Model Configuration
 models:
   evaluator:
-    provider: "vertex_ai"
+    provider: "vertex"
     parameters:
       model: "gemini-1.5-pro-002"
       temperature: 0

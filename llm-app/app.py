@@ -1,11 +1,9 @@
 from fastapi import FastAPI
 from langserve import add_routes
-from dotenv import load_dotenv
 
 from src.api import routes
 from src.core.chains import CreateChain
 
-load_dotenv()
 
 chain = CreateChain().create_chain
 

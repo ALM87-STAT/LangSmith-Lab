@@ -12,7 +12,7 @@ class ChatModels:
         self.config = config
 
     def _select_model(self, model_config) -> object:
-        if model_config.provider == "vertex_ai":
+        if model_config.provider == "vertex":
             vertex_ai = ChatVertexAI(**model_config.parameters)
             return vertex_ai
         elif model_config.provider == "openai":

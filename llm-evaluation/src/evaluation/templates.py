@@ -10,7 +10,7 @@ from src.evaluation.prompts import (
 
 class PromptTemplates:
     evaluation_prompt_template = PromptTemplate(
-        input_variables=["question", "correct_answer", "answer"],
+        input_variables=["experto", "asistente"],
         template=EVALUATION_PROMPT,
     )
 
