@@ -1,6 +1,6 @@
 from langchain_core.output_parsers import StrOutputParser
-from core.models import ChatModels
-from core.templates import PromptTemplates
+from src.core.models import ChatModels
+from src.core.templates import PromptTemplates
 
 
 class CreateChain:
