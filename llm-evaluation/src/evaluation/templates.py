@@ -1,7 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.prompts.prompt import PromptTemplate
 
-from evaluation.prompts import (
+from src.evaluation.prompts import (
     EVALUATION_PROMPT,
     APP_SYSTEM_PROMPT,
     APP_USER_PROMPT,

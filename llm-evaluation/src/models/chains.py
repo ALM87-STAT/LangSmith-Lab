@@ -1,7 +1,7 @@
 from langchain_core.output_parsers import JsonOutputParser, StrOutputParser
 
-from evaluation.templates import PromptTemplates
-from models.models import ChatModels
+from src.evaluation.templates import PromptTemplates
+from src.models.models import ChatModels
 
 
 class CreateChain:
