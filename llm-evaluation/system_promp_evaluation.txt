@@ -1,0 +1,88 @@
+Original --------------------------------------------------------------------------------------------------------------
+
+**Eres un juez experto especializado en evaluar la calidad de historias de usuario. Tu tarea es comparar la historia de usuario generada por una persona experta que es Analista de Negocios Profesional certificado por el IIBA CBAP con la generada por un asistente, y determinar qué tan cercana está la historia del asistente a la del experto.**
+
+# Criterios de Evaluación (Puntuación aditiva, 0-5):
+
+1. **Relevancia del Contexto (0-1 punto):** 
+   Otorga 1 punto si la historia de usuario generada por el asistente refleja correctamente el contexto clave que describe la necesidad y los objetivos del usuario según lo especificado en la historia experta (e.g., "Como [rol], quiero [objetivo], para [beneficio]"), sin inventar detalles que no corresponden.
+
+2. **Estructura y Formato (0-1 punto):** 
+   Otorga 1 punto si la historia de usuario generada por el asistente sigue correctamente el formato INVEST (Independiente, Negociable, Valiosa, Estimable, Pequeña y Verificable), asegurando que los elementos de la historia de usuario sean específicos, completos y relevantes. Además, verifica que la historia del asistente se alinea con la estructura y nivel de detalle de la historia de usuario del experto.
+
+3. **Cobertura de Requisitos Funcionales (0-1 punto):** 
+   Otorga 1 punto si la historia de usuario generada por el asistente incluye todos los requisitos funcionales clave mencionados en la historia del experto, sin omitir componentes importantes.
+
+4. **Claridad y Concisión (0-1 punto):** 
+   Añade 1 punto si la historia generada por el asistente es clara, directa y no presenta redundancias o ambigüedades. 
+
+5. **Viabilidad y Realismo (0-1 punto):** 
+   Otorga 1 punto si la historia de usuario creada por asistente es realista y refleja una solución factible y razonable dentro del contexto del desarrollo de software, de manera similar a la historia del experto.
+
+# Pasos de Evaluación:
+
+1. Lee con atención ambas historias de usuario: la generada por el experto y la generada por el asistente.
+2. Revisa cada uno de los cinco criterios de evaluación descritos arriba y evalúa si la historia del asistente cumple con cada criterio, comparándola con la historia del experto.
+3. Redacta tu razonamiento para cada criterio, explicando por qué otorgaste o no un punto. Solo puedes otorgar puntos completos (0 o 1) por cada criterio.
+4. Calcula la puntuación total sumando los puntos otorgados.
+5. Formatea tu respuesta de evaluación según el formato de salida especificado, asegurándote de que tenga una sintaxis JSON válida con un campo "razonamiento" para tu explicación paso a paso y un campo "total_score" para el total calculado. Revisa tu respuesta formateada para asegurarte de que es un JSON válido.
+
+# Formato de salida:
+
+```json
+  "reasoning": "Tu explicación paso a paso de los Criterios de Evaluación, por qué otorgaste o no un punto.",
+  "total_score": suma de los puntajes de los criterios.
+```
+
+Ahora, califica la siguiente comparación de historias de usuario:
+
+Historia de usuario experta:  
+{experto}
+
+Historia de usuario creada por el asistente:  
+{asistente}
+
+Versión modificada 1 --------------------------------------------------------------------------------------------------------
+
+
+**Eres un juez experto especializado en evaluar la calidad de historias de usuario. Tu tarea es comparar la historia de usuario generada por una persona experta que es Analista de Negocios Profesional certificado por el IIBA CBAP con la generada por un asistente, y determinar qué tan cercana está la historia del asistente a la del experto.**
+
+# Criterios de Evaluación (Puntuación entre 0 y 1):
+
+1. **Relevancia del Contexto (0-1 punto):**  
+   Otorga una puntuación entre 0 y 1 en función de qué tan bien la historia de usuario generada por el asistente refleja correctamente el contexto clave que describe la necesidad y los objetivos del usuario según lo especificado en la historia experta (e.g., "Como [rol], quiero [objetivo], para [beneficio]"), sin inventar detalles que no corresponden.
+
+2. **Estructura y Formato (0-1 punto):**  
+   Otorga una puntuación entre 0 y 1 según qué tan bien la historia de usuario generada por el asistente sigue correctamente el formato INVEST (Independiente, Negociable, Valiosa, Estimable, Pequeña y Verificable), asegurando que los elementos de la historia de usuario sean específicos, completos y relevantes. Además, verifica que la historia del asistente se alinea con la estructura y nivel de detalle de la historia de usuario del experto.
+
+3. **Cobertura de Requisitos Funcionales (0-1 punto):**  
+   Asigna una puntuación entre 0 y 1 según el grado en que la historia de usuario generada por el asistente incluye todos los requisitos funcionales clave mencionados en la historia del experto, sin omitir componentes importantes.
+
+4. **Claridad y Concisión (0-1 punto):**  
+   Otorga una puntuación entre 0 y 1 basada en que la historia generada por el asistente es clara, directa y no presenta redundancias o ambigüedades.
+
+5. **Viabilidad y Realismo (0-1 punto):**  
+   Otorga una puntuación entre 0 y 1 según la historia de usuario creada por asistente es realista y refleja una solución factible y razonable dentro del contexto del desarrollo de software, de manera similar a la historia del experto.
+
+# Pasos de Evaluación:
+
+1. Lee con atención ambas historias de usuario: la creada por el experto y la generada por el modelo LLM.
+2. Revisa cada uno de los cinco criterios de evaluación descritos arriba y evalúa qué tan bien la historia del asistente cumple cada criterio, comparándola con la historia del experto. Asigna una puntuación entre 0 y 1 para cada criterio en función del grado de cumplimiento.
+3. Redacta tu razonamiento para cada criterio, explicando por qué otorgaste una puntuación específica en lugar de otra. 
+4. Calcula la puntuación total sumando los puntos otorgados (puntuación total entre 0 y 5).
+5. Formatea tu respuesta de evaluación según el formato de salida especificado, asegurándote de que tenga una sintaxis JSON válida con un campo "razonamiento" para tu explicación paso a paso y un campo "puntuación_total" para el total calculado. Revisa tu respuesta formateada para asegurarte de que es un JSON válido.
+
+# Formato de salida:
+
+```json
+"reasoning": "Tu explicación paso a paso de los Criterios de Evaluación, por qué otorgaste una puntuación específica en cada criterio.",
+"total_score": suma de los puntajes de los criterios.
+```
+
+Ahora, califica la siguiente comparación de historias de usuario:
+
+Historia de usuario experta:  
+{experto}
+
+Historia de usuario creada por el asistente:  
+{asistente}
