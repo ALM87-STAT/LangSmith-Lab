@@ -21,7 +21,7 @@ class Config(BaseModel):
 
 class ConfigLoader:
 
-    def __init__(self, config_path: str | Path = "src\config\config.yml"):
+    def __init__(self, config_path: str | Path = "src/config/config.yml"):
         self.config_path = Path(config_path)
         self.config = self._load_config()
         load_dotenv()
