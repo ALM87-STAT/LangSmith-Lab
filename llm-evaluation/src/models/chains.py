@@ -1,6 +1,6 @@
 from langchain_core.output_parsers import JsonOutputParser, StrOutputParser
 
-from src.evaluation.templates import PromptTemplates
+from src.models.templates import PromptTemplates
 from src.models.models import ChatModels
 
 
