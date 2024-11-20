@@ -1,13 +1,16 @@
-FROM python:3.11-slim
+FROM python:3.9-slim
 
-WORKDIR /code
+WORKDIR /app
 
-COPY ./requirements.txt /code/requirements.txt
+# Instalar dependencias
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+# Copiar código fuente
+COPY ./src .
 
-COPY ./src /code/src
-
+# Puerto donde se ejecutará la aplicación
 EXPOSE 8000
 
-CMD ["python", "src/app.py"]
+# Comando para ejecutar la aplicación
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]

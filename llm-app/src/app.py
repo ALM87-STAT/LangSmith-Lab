@@ -11,7 +11,7 @@ app = FastAPI()
 
 
 app.include_router(routes.router)
-add_routes(app, chain, path="/generate_story")
+add_routes(app, chain, path="/generate_story", enable_feedback_endpoint=True)
 
 if __name__ == "__main__":
     import uvicorn

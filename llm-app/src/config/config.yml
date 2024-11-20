@@ -3,9 +3,9 @@
 # Model Configuration
 models:
   application:
-    provider: "openai"
+    provider: "vertex"
     parameters:
-      model: "gpt-4o-mini"
+      model: "gemini-1.5-flash"
       temperature: 1
       max_tokens: 2048
       top_p: 1.0

@@ -13,7 +13,7 @@ class ChatModels:
 
     @property
     def get_model(self) -> object:
-        if self.config.models.application.provider == "vertex_ai":
+        if self.config.models.application.provider == "vertex":
             vertex_ai = ChatVertexAI(**self.config.models.application.parameters)
             return vertex_ai
         elif self.config.models.application.provider == "openai":
