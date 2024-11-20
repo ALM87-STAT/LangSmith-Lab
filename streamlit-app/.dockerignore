@@ -1,0 +1,75 @@
+
+# Otros
+streamlit-langsmith.py
+streamlit-opik.py
+
+# Python
+__pycache__/
+*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+coverage.xml
+.mypy_cache/
+
+# Virtual Environment
+.env
+.venv
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs y datos
+*.log
+logs/
+data/
+tmp/
+
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Desarrollo
+.git
+.gitignore
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Documentación
+docs/
+*.md
+!README.md
+
+# Pruebas
+tests/
+test_*.py
